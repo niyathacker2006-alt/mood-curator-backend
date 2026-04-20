@@ -1,6 +1,7 @@
 import jwt from 'jsonwebtoken';
-import User from './models/User'; // Assuming you have a Mongoose model
-
+import express from 'express';
+import User from './models/user'; 
+const router = express.Router();
 // Your secret key (In real life, put this in a .env file!)
 const JWT_SECRET = "my_super_secret_key_123"; 
 
